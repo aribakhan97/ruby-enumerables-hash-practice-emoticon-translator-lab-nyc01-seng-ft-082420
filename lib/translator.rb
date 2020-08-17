@@ -20,7 +20,7 @@ def get_japanese_emoticon(emoticon_file, emoticon)
   emoticon_lib.each do |key|
     #binding.pry
     if key[1][:english] == emoticon
-      return key[:japanese]
+      return key[1][:japanese]
     end
   end
   return 'Sorry, that emoticon was not found'
