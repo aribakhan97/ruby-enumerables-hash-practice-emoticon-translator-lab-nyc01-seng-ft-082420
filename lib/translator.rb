@@ -7,9 +7,9 @@ def load_library(emoticon_lib)
     emoticon_hash = {}
   emoticons.each do |key, value|
     emoticon_hash[key][:english] = value[0]
-    emoticon_hash[key][:japanese] = value[1] 
+    emoticon_hash[key][:japanese] = value[1]
   end
-  emoticon_lib
+  emoticon_hash
 end
 
 
