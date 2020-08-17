@@ -6,6 +6,7 @@ def load_library(emoticon_lib)
   emoticons = YAML.load_file(emoticon_lib)
     emoticon_hash = {}
   emoticons.each do |key, value|
+    binding.pry
     emoticon_hash[key][:english] = value[0]
     emoticon_hash[key][:japanese] = value[1]
   end
